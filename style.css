@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe4e6; /* Pastel pink background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.page-container {
+    background-color: #ffffff; /* White background for containers */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 28rem; /* Approx 448px, similar to Tailwind's max-w-md */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.page-title {
+    font-size: 1.875rem; /* Approx 30px, similar to Tailwind's text-3xl */
+    font-weight: bold;
+    color: #db2777; /* Pastel pink for title */
+    margin-bottom: 1rem;
+}
+
+.page-text {
+    color: #9d174d; /* Darker pastel pink for text */
+    margin-bottom: 1.5rem;
+}
+
+.start-btn {
+    background-color: #f472b6; /* Pastel pink button */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 9999px; /* Fully rounded */
+    font-size: 1.125rem; /* Approx 18px, similar to Tailwind's text-lg */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #ec4899; /* Slightly darker pink on hover */
+}
+
+.quiz-title {
+    font-size: 1.5rem; /* Approx 24px, similar to Tailwind's text-2xl */
+    font-weight: bold;
+    color: #db2777; /* Pastel pink for title */
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-size: 1.125rem; /* Approx 18px, similar to Tailwind's text-lg */
+    font-weight: 600;
+    color: #9d174d; /* Darker pastel pink */
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Approx 12px, similar to Tailwind's space-y-3 */
+}
+
+.options div {
+    background-color: #e9d5ff; /* Pastel purple for options */
+    padding: 0.75rem;
+    border-radius: 0.375rem; /* Approx 6px */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options div:hover {
+    background-color: #d8b4fe; /* Slightly darker pastel purple on hover */
+}
+
+.options div.selected {
+    background-color: #f9a8d4; /* Pastel pink for selected option */
+    color: #ffffff;
+}
+
+.options div.correct {
+    background-color: #a7f3d0; /* Pastel green for correct answer */
+    color: #ffffff;
+}
+
+.options div.incorrect {
+    background-color: #fda4af; /* Pastel red for incorrect answer */
+    color: #ffffff;
+}
+
+.score {
+    margin-top: 1.5rem;
+    color: #9d174d; /* Darker pastel pink */
+    font-size: 1rem;
+}
+
+.button-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Approx 16px, similar to Tailwind's space-x-4 */
+}
+
+.next-btn, .restart-btn {
+    background-color: #f472b6; /* Pastel pink button */
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 9999px; /* Fully rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover, .restart-btn:hover {
+    background-color: #ec4899; /* Slightly darker pink on hover */
+}
+
+.next-btn:disabled {
+    background-color: #d1d5db; /* Gray for disabled button */
+    cursor: not-allowed;
+}
+
+.restart-btn {
+    background-color: #c084fc; /* Pastel purple for restart button */
+}
+
+.restart-btn:hover {
+    background-color: #a855f7; /* Slightly darker purple on hover */
+}
+
+.hidden {
+    display: none;
+}
